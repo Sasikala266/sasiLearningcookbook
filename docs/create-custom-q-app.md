@@ -8,7 +8,30 @@ This page walks through creating a custom Q application (skeleton) that will int
 
 2. Create the new app in Q (high-level steps)
 - Sign in to your Q developer console.
-- Create a new app/project and give it a name like `custom-q-jira-integration`.
+- Click on Create application and give it a name ex:`QBusiness-application-jira-assistant`.
+
+[<img src="images/q-app-name.png">]()
+
+- Under the User access select the Authenticated access
+
+[<img src="images/user-access-for-app.png">]()
+
+- For Access management method choose `AWS IAM Identity Center (recommended)`
+
+[<img src="images/q-app-identity-center.png">]()
+
+- For the user we want to provision access select the users from the drop-down if you have the users configured. If you don't have the user configure [check here](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html?icmpid=docs_sso_console)
+
+[<img src="images/user-from-drop-down.png">]()
+
+- Also choose the type of subscription we want to provision for the users/user.
+
+[<img src="images/q-access-from-dropdown.png">]()
+
+- In [Application service access]() Choose a method to authorize Amazon Q Business, Encryption , Web experience settings
+
+[<img src="images/application-detail.png">]()
+
 - Set a redirect URI (if using OAuth 2.0) to your app's callback endpoint, e.g. `https://<your-app>/auth/callback`.
 
 3. App skeleton (example)
