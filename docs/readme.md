@@ -14,4 +14,4 @@ Docs structure
 - 3. [Create Jira app & OAuth](create-jira-app-oauth.md)
 - 4. [Launch & Test](launch-and-test.md)
 
-[<img src="image/assistant.png">]()
+[<img src="images/assistant.png">]()
