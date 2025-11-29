@@ -10,7 +10,7 @@ Prerequisites
 
 Docs structure
 - 1. [Create custom Q app](create-custom-q-app.md)
-- 2. [Create the data connection with Jira](create-data-connection-with-jira.md)
+- 2. [Create the data connection with Jira](q-data-source-for-jira.md)
 - 3. [Create Jira app & OAuth](create-jira-app-oauth.md)
 - 4. [Launch & Test](launch-and-test.md)
 
