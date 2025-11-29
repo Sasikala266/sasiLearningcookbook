@@ -1,4 +1,4 @@
-# Creating the Data Source for Q as Jira:
+# 2. Creating the Data Source for Q as Jira:
 
 
 - Once we are able to access the Q application we can create the data sources for the application.
@@ -58,7 +58,7 @@
 
 - Now choose the Field mappins for the project and Issues as per the use case.
 
-- ![ds-mappings.png](images/q-data-source/ds-mappings.png)
+![ds-mappings.png](images/q-data-source/ds-mappings.png)
 
 - Once you click on add data source you will see a message like 
 
@@ -77,12 +77,12 @@
 
 - You can see the status of the sync and also the logs and report of the sync
 
-![ds-logs.png](ds-logs.png)
+![ds-logs.png](images/q-data-source/ds-logs.png)
 
 - Now lets check the out Jira Assistant is fetching the details properly from the Jira data source created.
 - We can observe the source is the Jira story name and the url we asked in the question to the  Jira assistant*/
 
-![ds-test-fetching-jira-story-details.png](ds-test-fetching-jira-story-details.png)
+![ds-test-fetching-jira-story-details.png](images/q-data-source/ds-test-fetching-jira-story-details.png)
 
 - If we are trying fetch something not in the data source it Jira Assistant will reposnd like below
 
