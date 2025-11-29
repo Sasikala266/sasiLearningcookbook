@@ -1,17 +1,63 @@
-# Custom Q App with Jira Plugin
+# 🚀 Q Application for Jira Assistant
 
-Welcome — this documentation describes how to create a custom Q application, connect it to Jira, configure the Jira app/OAuth permissions, and launch & test the integration.
+**Q is a lightweight, command-driven assistant that integrates with Jira to streamline team collaboration, automate workflows, and simplify issue tracking.**
 
-Prerequisites
-- Access to the Q platform (developer account / admin access to create custom apps).
-- Jira access: admin permissions in the Jira site (Cloud or Server/Data Center) where you will register the app.
-- A local development environment with: Git, Node.js (or language runtime used by your Q app), and curl.
-- An RSA keypair (if using OAuth 1.0a with RSA) or OAuth client credentials (if using OAuth 2.0 3LO).
+---
 
-Docs structure
-- 1. [Create custom Q app](create-custom-q-app.md)
-- 2. [Create the data connection with Jira](q-data-source-for-jira.md)
-- 3. [Create Jira app & OAuth](create-jira-app-oauth.md)
-- 4. [Launch & Test](launch-and-test.md)
+[<img src="images/q/assistant.png">]()
 
-[<img src="images/assistant.png">]()
+## 📋 Prerequisites
+
+Before you begin building and connecting your custom Q application with Jira, make sure the following prerequisites are in place:
+
+🧰 **Jira Setup**
+
+    ✅ A Jira account with admin access
+    
+    ✅ A Jira project or board created for your team
+    
+    ✅ Permissions to create and manage Jira apps and plugins
+    
+    ✅ Access to Jira's OAuth credentials (Client ID and Secret)
+
+**☁️ AWS Setup**
+
+    ✅ An active AWS account
+    
+    ✅ IAM user or role with permissions to access:
+
+        - Amazon S3 (for storing logs or assets)
+        - AWS Lambda (if using serverless functions)
+        - Amazon API Gateway (for exposing Q endpoints)
+
+    ✅ AWS CLI configured locally (optional but recommended)
+
+**Let's Start Building!!!**
+
+1. **Create a Custom Q App**  
+   Build your own Q interface tailored to your team's needs.  
+   👉 [Create custom Q app](create-custom-q-app.md)
+
+2. **Connect Q to Jira**  
+   Establish a secure data source to fetch and update Jira issues.  
+   👉 [Create the data connection with Jira](q-data-source-for-jira.md)
+
+3. **Set Up Jira App & OAuth**  
+   Register your Jira app and configure OAuth for secure authentication.  
+   👉 [Create Jira app & OAuth](create-jira-app-oauth.md)
+
+4. **Deploy Jira Plugin for Q Assistant**  
+   Enable Q to interact with Jira natively via plugin integration.  
+   👉 [Create Jira plugin for Jira Assistant](create-jira-plugin.md)
+
+---
+
+## 🧩 What’s Next?
+
+Once setup is complete, your team can:
+- Use Q to create, update, and track Jira issues via simple commands
+- Receive real-time notifications and status updates
+- Collaborate seamlessly across Jira projects
+
+---
+

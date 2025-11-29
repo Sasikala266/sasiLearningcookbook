@@ -4,7 +4,7 @@
 - Once we are able to access the Q application we can create the data sources for the application.
 - Click on the application from glue console and choose data source from left hand pane.
 
-[<img src="images/q/data-source-redirect.png">]()
+[<img src="images/q-data-source/data-source-redirect.png">]()
 
 ## Creating Index:
 
@@ -12,17 +12,17 @@
 - Click on create index , give name to the index and choose `Index provisioning` as per your use case.
 - For the demo purpose we choose starter as shown in the below image.
 
-[<img src="images/q/creating-index.png">]()
+[<img src="images/q-data-source/creating-index.png">]()
 
 - Once the index is created you can see it in the active status as shown in the below snippet
 
-[<img src="images/q/index-after-creation.png">]()
+[<img src="images/q-data-source/index-after-creation.png">]()
 
 ## Creating Data Source for Jira:
 
 - Now we can create the data source, hit the add data source and search Jira and select.
 
-[<img src="images/q/jira-ds-choose.png">]()
+[<img src="images/q-data-source/jira-ds-choose.png">]()
 
 - Give Name and Description.
 
