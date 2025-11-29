@@ -10,62 +10,35 @@ This page walks through creating a custom Q application (skeleton) that will int
 - Sign in to your Q developer console.
 - Click on Create application and give it a name ex:`QBusiness-application-jira-assistant`.
 
-[<img src="images/q-app-name.png">]()
+[<img src="images/q/q-app-name.png">]()
 
 - Under the User access select the Authenticated access
 
-[<img src="images/user-access-for-app.png">]()
+[<img src="images/q/user-access-for-app.png">]()
 
 - For Access management method choose `AWS IAM Identity Center (recommended)`
 
-[<img src="images/q-app-identity-center.png">]()
+[<img src="images/q/q-app-identity-center.png">]()
 
 - For the user we want to provision access select the users from the drop-down if you have the users configured. If you don't have the user configure [check here](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html?icmpid=docs_sso_console)
 
-[<img src="images/user-from-drop-down.png">]()
+[<img src="images/q/q-user-from-drop-down.png">]()
 
 - Also choose the type of subscription we want to provision for the users/user.
 
-[<img src="images/q-access-from-dropdown.png">]()
+[<img src="images/q/q-subscription-from-drop-down.png">]()
 
 - In [Application service access]() Choose a method to authorize Amazon Q Business, Encryption , Web experience settings
 
-[<img src="images/application-detail.png">]()
+[<img src="images/q/application-detail.png">]()
 
-- Set a redirect URI (if using OAuth 2.0) to your app's callback endpoint, e.g. `https://<your-app>/auth/callback`.
+- It will take few min to propagate the new roles and spin up the app.
 
-3. App skeleton (example)
-- Create a repository or local project:
-  - Initialize project: `git init custom-q-jira-integration`
-  - Create basic files: `package.json`, `src/` (or the language equivalent)
-- Add configuration placeholders for Jira:
-  - JIRA_BASE_URL
-  - JIRA_AUTH_METHOD (e.g., oauth1, oauth2, api_token)
-  - JIRA_CONSUMER_KEY (OAuth 1.0a)
-  - JIRA_PRIVATE_KEY (PEM) — store in a secure secret store
-  - JIRA_CLIENT_ID / JIRA_CLIENT_SECRET (OAuth 2.0)
-  - CALLBACK_URL (OAuth redirect URI)
+[<img src="images/q/assistant-created.png">]()
 
-4. Secrets and storage
-- Never store private keys or client secrets in plaintext in repo.
-- Use Q platform secrets or your cloud provider secret manager for private keys and client secrets.
+- Try to access the application deployed using the web experience URL. Once you click on the url it will redirect to the username and then it will ask for the password and for the first time you need to set up the authentication process
+(using goggle authenticator or other apps which suits your use case)
+- Then you can launch the application like below
 
-5. Add Jira client code
-- Implement a thin wrapper around Jira REST API (or use an existing SDK).
-- Example endpoints to implement:
-  - createIssue(payload)
-  - updateIssue(issueId, payload)
-  - deleteIssue(issueId)
-  - getIssue(issueId)
+[<img src="images/q/app-launch.png">]()
 
-6. Local dev notes
-- Use environment file `.env` for local testing (but do not commit).
-- Example `.env`:
-  - [JIRA_BASE_URL](https://your-domain.atlassian.net)
-  - JIRA_AUTH_METHOD=oauth2
-  - JIRA_CLIENT_ID=<client-id>
-  - JIRA_CLIENT_SECRET=<client-secret>
-  - [CALLBACK_URL](http://localhost:3000/auth/callback)
-
-Next
-- Proceed to create the Jira data connection (next doc) and register the Jira app / OAuth credentials.
