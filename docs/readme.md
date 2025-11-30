@@ -50,6 +50,11 @@ Before you begin building and connecting your custom Q application with Jira, ma
    Enable Q to interact with Jira natively via plugin integration.  
    👉 [Create Jira plugin for Jira Assistant](create-jira-plugin.md)
 
+5. **Demo**
+
+   👉 [Demo video showing the creation of the assistant and usage](demo.md)
+
+
 ---
 
 ## 🧩 What’s Next?
