@@ -54,6 +54,10 @@ Before you begin building and connecting your custom Q application with Jira, ma
 
    👉 [Demo video showing the creation of the assistant and usage](demo.md)
 
+6. **Additional Learnings**
+
+   👉 [Addional Learnings](additional-learning.md)
+
 
 ---
 
