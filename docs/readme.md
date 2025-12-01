@@ -38,7 +38,7 @@ Before you begin building and connecting your custom Q application with Jira, ma
    Build your own Q interface tailored to your team's needs.  
    👉 [Create custom Q app](create-custom-q-app.md)
 
-2. **Connect Q to Jira**  
+2. **Connect Q to Jira using Data sources**  
    Establish a secure data source to fetch and update Jira issues.  
    👉 [Create the data connection with Jira](q-data-source-for-jira.md)
 
