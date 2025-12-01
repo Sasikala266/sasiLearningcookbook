@@ -1,3 +1,7 @@
+## Don't know much about Amazon Q??
+
+* Please go through the documentation to understand more about [Amazon Q](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/what-is.html)
+
 ## Basic Differences **Jira Data Sources** and **Jira Plugins**:
 
 
@@ -58,7 +62,7 @@ Here’s a practical recommendation on **when to use Jira Data Sources vs Jira P
 
 ***
 
-### What are the Current Limitations of the Jira Plugin
+## What are the Current Limitations of the Jira Plugin
 
 *  Below are the list of action that were [limited](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-actions.html) by the Jira Plugin.
 
@@ -71,3 +75,4 @@ Here’s a practical recommendation on **when to use Jira Data Sources vs Jira P
    *   Move issue to sprint
    *   Create sprint
    *   Delete sprint
+
