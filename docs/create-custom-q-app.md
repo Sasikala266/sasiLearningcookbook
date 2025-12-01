@@ -7,7 +7,7 @@ This page walks through creating a custom Q application (skeleton) that will int
 - Choose authentication method: OAuth 1.0a (RSA) for Server/DC, OAuth 2.0 (3LO) for Jira Cloud, or an API token (Cloud) for non-OAuth flows.
 
 2. Create the new app in Q (high-level steps)
-- Sign in to your Q developer console.
+- Sign in to your Q Business console.
 - Click on Create application and give it a name ex:`QBusiness-application-jira-assistant`.
 
 [<img src="images/q/q-app-name.png">]()
@@ -28,7 +28,7 @@ This page walks through creating a custom Q application (skeleton) that will int
 
 [<img src="images/q/q-subscription-from-drop-down.png">]()
 
-- In [Application service access]() Choose a method to authorize Amazon Q Business, Encryption , Web experience settings
+- In [Application service access](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/using-service-linked-roles.html?icmpid=docs_console_unmapped) Choose a method to authorize Amazon Q Business, Encryption , Web experience settings
 
 [<img src="images/q/application-detail.png">]()
 
