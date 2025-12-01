@@ -1,4 +1,4 @@
-Basic Differences **Jira Data Sources** and **Jira Plugins**:
+## Basic Differences **Jira Data Sources** and **Jira Plugins**:
 
 
 ### **Jira Data Sources vs Jira Plugins**
@@ -58,3 +58,16 @@ Here’s a practical recommendation on **when to use Jira Data Sources vs Jira P
 
 ***
 
+### What are the Current Limitations of the Jira Plugin
+
+*  Below are the list of action that were [limited](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/jira-actions.html) by the Jira Plugin.
+
+   *   Read issues
+   *   Create issues
+   *   Search issues
+   *   Change issue status
+   *   Delete issue
+   *   Read sprint
+   *   Move issue to sprint
+   *   Create sprint
+   *   Delete sprint
